@@ -1,0 +1,230 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+/* THE BODY STYLING */
+body{
+    font: Arial, Helvetica, sans-serif;
+}
+/* END OF BODY */
+
+/* THE MAIN SECTION */
+section{
+    width:80%;
+    margin:1em auto;
+}
+
+/* THE HEADING CLASS */
+.heading{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    justify-content:space-between;
+}
+.heading h1{
+    padding:15px 0;
+}
+.heading h1 a{
+    text-decoration:none;
+    font-size:50px;
+    font-weight:100;
+    color:#861BBF;
+}
+#searchbox{
+    background:linear-gradient(#E4F2B9 , #B7E953);
+    width:400px;
+    padding:15px 0;
+}
+.text{
+    width:200px;
+    padding:5px;
+    font-size:15px;
+    color:#E36A0C;
+    background: white url(images/icons8-search-30.png) right center no-repeat;
+    border:1px solid #C8D03E;   
+    margin-left:20px;
+}
+.submit{
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    background: #A751D6;
+    font-size: 15px;
+    border: 1px solid #DCD5E1;
+    margin-left:40px;
+}
+/* END OF HEADING CLASS */
+
+/* THE MENU CLASS */
+.menu{
+    margin:5px 0;
+    background:linear-gradient(#F8F594,#D5D533);
+}
+.menu ul{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:80%;
+    justify-content:space-between;
+    margin:0 auto;
+}
+.menu ul li{
+    margin:25px 0;
+    padding:0 30px;
+    border-right:1px solid #5D12E7;
+}
+.menu ul li:last-child{
+    border-right:none;
+}
+.menu ul li a{
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:15px;
+    color:#5D12E7;
+    line-height:30px;
+    transition:all 0.3s ease;
+}
+.menu ul li a:hover , .menu ul li a:active{
+    font-size:18px;
+    font-weight:bold;
+    color:#B314DB;
+}
+/* END OF MENU CLASS */
+
+/* THE INTRODUCTION CLASS */
+.introduction{
+    background:linear-gradient(#E5F2BB,#B7E952);
+    padding:30px;
+    margin:16px 0;
+}
+.introduction h3{
+    margin:30px 0;
+    font-size:45px;
+    color:#316901;
+    font-weight:normal;
+}
+.introduction p{
+    font-size:25px;
+    color:#628F19;
+    text-align:justify;
+    margin-bottom:20px;
+}
+/* END OF INTRODUCTION CLASS */
+
+/* SIDE-BAR CLASS */
+.side-bar{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    margin:10px auto;
+    justify-content:space-between;
+}
+.side-bar div{
+    width:49%;
+    border:1px solid #BAF46F;
+    border-radius:20px;
+}
+.side-bar h3{
+    color:#B314DB;
+    font-size:30px;
+    margin-left:30px;
+    margin-top:20px;
+}
+.side-bar ul{
+    padding-top:8px;
+}
+.side-one  li{
+    padding:4px 0 4px 10px;
+    list-style:none;
+    background:url(images/icons8-arrow-24.png) no-repeat left center;
+
+}
+.side-two li{
+    padding:18px 0 17px 70px;
+    list-style:none;
+    background:url(images/icons8-tick-24.png) no-repeat left center;
+
+}
+.side-bar li a{
+    text-decoration:none;
+    font-size:20px;
+    color:#5D12E7;
+    transition:all 0.3s ease;
+    text-transform: capitalize;
+    margin-left:10px;
+    text-align:justify;
+}
+/* END OF SIDE-BAR */
+
+/* FLUTTER */
+.flutter{
+    margin-top:10px;
+    background:linear-gradient(#F6F390, #D5D533); 
+    padding:15px;
+}
+.flutter p{
+    padding:10px 30px;
+}
+/* END OF FLUTTER */
+/* END OF THE MAIN SECTION */
+
+@media screen and (max-width:500px){
+    .heading{
+        flex-direction:column;
+    }
+    .heading h1{
+        padding:0;
+    }
+    .heading h1 a{
+        font-size:40px;
+        padding:10px;
+    }
+    #searchbox{
+        display:none;
+    }
+    .menu{
+        margin:20px 0;
+    }
+    .menu ul{
+        width:100%;
+        flex-direction:column;
+    }
+    .menu ul li{
+        margin:10px 0;
+        padding:0 10px;
+        border-right:none;
+    }
+    .menu ul li a{
+        line-height:10px;
+    }
+    .introduction h3{
+        font-size:30px;
+    }
+    .introduction p{
+        font-size:20px;
+    }
+    .side-bar{
+        flex-direction:column;
+    }
+    .side-bar div{
+        width:100%;
+        text-align:center;
+        margin-top:20px;
+    }
+    .side-bar ul{
+        padding-top:2px;
+    }
+    .side-one li{
+        padding:5px 0 1px 5px;
+    }
+    .side-two li{
+        padding:10px 0 5px 30px;
+    }
+    .flutter{
+        margin-top:20px;
+    }
+}
